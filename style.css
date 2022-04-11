@@ -24,7 +24,7 @@ ul{
 }
 #grid{
     display: grid;
-    grid-template-columns: 300px 1fr 1fr ;
+    grid-template-columns: 300px 1fr 2fr ;
     grid-template-rows: 1fr 1fr ;
  }
 
@@ -34,6 +34,7 @@ ul{
 .out{
     grid-column: 3 / 4;
     grid-row: 1 / 2;
+    padding-right: 20px;
 }
 @media(max-width:720px){
     #grid{
@@ -41,6 +42,9 @@ ul{
     }
     ul{
         border-right:none;
+    }
+    ol{
+        width: 300px;
     }
     h1{
         border-bottom:none;               

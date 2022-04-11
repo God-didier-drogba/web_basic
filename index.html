@@ -3,7 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <title>새 탭</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+            color:rgb(50, 0, 0);
+        }
+        h1{
+            text-align: center;
+            font-size: 55px;
+            border-bottom:2px solid gray;
+            margin: 0;
+            padding: 20px;
+        }
+        ul{
+            font-size: 15px;
+            border-right:1px solid gray ;
+            width: 200px;
+            margin: 0;
+            padding: 20px;
+        }
+        #grid ul{
+            padding-left: 33px;
+        }
+        #grid{
+            display: grid;
+            grid-template-columns: 300px 1fr 1fr ;
+            grid-template-rows: 1fr 1fr ;
+        }
+
+        .in{
+            grid-column: 2 / 3;
+        }
+        .out{
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;
+        }
+        @media(max-width:720px){
+            #grid{
+                display: block;
+            }
+            ul{
+                border-right:none;
+            }
+            ol{
+                width: 300px;
+            }
+            h1{
+                border-bottom:none;               
+            }
+            .in{
+                grid-column: 2 / 3;
+            }
+            .out{
+                grid-column: 3 / 4;
+                grid-row: 1 / 2;
+            }
+        }
+
+        @media(max-width:1110px) {
+            .in{
+                grid-column: 2 / 4;
+            }
+            .out{
+                grid-column: 2 / 4;
+                grid-row: 2 / 3;
+            }
+        }
+    </style>
 </head>
 <body>
 <h1><a href="index.html"  style="color:darkred;">UFC</a></h1>
