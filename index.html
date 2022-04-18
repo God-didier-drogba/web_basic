@@ -3,97 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>새 탭</title>
-    <style>
-        body{
-            margin: 0;
-        }
-        a {
-            text-decoration: none;
-            color:rgb(50, 0, 0);
-        }
-        h1{
-            text-align: center;
-            font-size: 55px;
-            border-bottom:2px solid gray;
-            margin: 0;
-            padding: 20px;
-        }
-        ul{
-            font-size: 15px;
-            border-right:1px solid gray ;
-            width: 200px;
-            margin: 0;
-            padding: 20px;
-        }
-        #grid ul{
-            padding-left: 33px;
-        }
-        #grid{
-            display: grid;
-            grid-template-columns: 300px 1fr 1fr ;
-            grid-template-rows: 1fr 1fr ;
-        }
-
-        .in{
-            grid-column: 2 / 3;
-        }
-        .out{
-            grid-column: 3 / 4;
-            grid-row: 1 / 2;
-        }
-        @media(max-width:720px){
-            #grid{
-                display: block;
-            }
-            ul{
-                border-right:none;
-            }
-            ol{
-                width: 300px;
-            }
-            h1{
-                border-bottom:none;               
-            }
-            .in{
-                grid-column: 2 / 3;
-            }
-            .out{
-                grid-column: 3 / 4;
-                grid-row: 1 / 2;
-            }
-        }
-
-        @media(max-width:1110px) {
-            .in{
-                grid-column: 2 / 4;
-            }
-            .out{
-                grid-column: 2 / 4;
-                grid-row: 2 / 3;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <h1><a href="index.html"  style="color:darkred;">UFC</a></h1>
 <div id="grid">
-    <ul>
-        <li><a href="2.Flyweight.html">플라이급</a></li>
-        <li><a href="3.Bantamweight.html">벤텀급</a></li>
-        <li><a href="4.Featherweight.html">페더급</a></li>                
-        <li><a href="5.Lightweight.html">라이트급</a></li>
-        <li><a href="6.Welterweight.html">웰터급</a></li>
-        <li><a href="7.Middleweight.html">미들급</a></li>
-        <li><a href="8. Light Heavyweight.html">라이트 헤비급</a></li>
-        <li><a href="9.Heavyweight.html">헤비급</a></li>
-    </ul>
-    <div class="in">
-        <h6>다음 예정된 타이틀 전</h6>
-        <img src="./zvsa.jpeg" width="400">
+    <div class="ranking">
+        <p>🔻체급별 소개</p>
+        <ul>
+            <li><a href="2.Flyweight.html">플라이급</a></li>
+            <li><a href="3.Bantamweight.html">벤텀급</a></li>
+            <li><a href="4.Featherweight.html">페더급</a></li>                
+            <li><a href="5.Lightweight.html">라이트급</a></li>
+            <li><a href="6.Welterweight.html">웰터급</a></li>
+            <li><a href="7.Middleweight.html">미들급</a></li>
+            <li><a href="8. Light Heavyweight.html">라이트 헤비급</a></li>
+            <li><a href="9.Heavyweight.html">헤비급</a></li>
+        </ul>
     </div>
-    <div class="out">
-        <h6>입문할 때 보기 좋은 영상</h6>
-        <iframe width="400" height="255" src="https://www.youtube.com/embed/5ECfayWLSdg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="in">
+        <h4>입문할 때 보기 좋은 영상</h4>
+        <iframe width= 80% height= 60% src="https://www.youtube.com/embed/5ECfayWLSdg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h4>소개</h4>
+        <p class="history">미국의 종합격투기 단체로 1993년 호리온 그레이시와 아트 데이비가 창립했다. 2000년 후반 이후부터 지금까지 세계 최고의 MMA(종합격투기) 단체로 군림하고 있다.</p>
     </div>
 </div>
 </body>
