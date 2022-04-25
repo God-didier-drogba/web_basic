@@ -35,7 +35,7 @@ h1{
     padding-top: 50px;
     text-align: left;
 }
-.WeightHistotyRanking p{
+.WeightHistoryRanking p{
     font-weight: bold;
     font-size: 30px;
     margin: 0;
@@ -59,7 +59,7 @@ ol{
     text-align: left;
     line-height: 35px;
 }
-.WeightHistotyRanking ol{
+.WeightHistoryRanking ol{
     padding-top: 30px;
 }
 .history{
@@ -71,7 +71,7 @@ ol{
 #grid{
     display: grid;
     grid-template-columns: 250px 2fr 1fr;
-    grid-template-rows: 600px 600px 1fr;
+    grid-template-rows: 600px 600px 600px;
 }
 #grid2{
     display: grid;
@@ -85,7 +85,7 @@ ol{
     grid-column: 2 / 4;
     grid-row: 3 / 4;
 }
-.WeightHistoty{
+.WeightHistory{
     grid-column: 1 / 2;
 }
 
@@ -104,7 +104,7 @@ ol{
 .ranking{
     grid-row: 1 / 4;
 }
-.WeightHistotyRanking{
+.WeightHistoryRanking{
     grid-column: 1 / 2;
 } 
 .WeightFirstChampion{
@@ -145,4 +145,17 @@ h4{
     padding: 20px;
     padding-left: 0;
     font-weight: bold;
+}
+.WeightHistoryVideo h4{
+    text-align: right;
+}
+.WeightHistoryVideo{
+    padding: 20px;
+}
+.WeightHistory{
+    padding: 20px;
+}
+.WeightHistory p{
+    padding-left: 0;
+    font-size: 20px
 }
