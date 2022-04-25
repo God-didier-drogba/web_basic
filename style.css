@@ -71,13 +71,22 @@ ol{
 #grid{
     display: grid;
     grid-template-columns: 250px 2fr 1fr;
-    grid-template-rows: 600px 1fr ;
+    grid-template-rows: 600px 600px 1fr;
 }
 #grid2{
     display: grid;
     grid-template-columns: 300px 1fr;
     grid-column: 2 / 4;
     grid-row: 2 / 3;
+}
+#grid3{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+}
+.WeightHistoty{
+    grid-column: 1 / 2;
 }
 
 .in{
@@ -93,11 +102,11 @@ ol{
     grid-row: 1 / 2;
 }
 .ranking{
-    grid-row: 1 / 3;
+    grid-row: 1 / 4;
 }
 .WeightHistotyRanking{
     grid-column: 1 / 2;
-}
+} 
 .WeightFirstChampion{
     padding: 20px;
     grid-column: 3 / 4;
