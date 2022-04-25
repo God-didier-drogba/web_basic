@@ -32,14 +32,14 @@ h1{
     font-weight: bold;
     font-size: 30px;
     margin: 0;
-    padding-top: 50px;
+    padding-top: 80px;
     text-align: left;
 }
 .WeightHistoryRanking p{
     font-weight: bold;
     font-size: 30px;
     margin: 0;
-    padding-top: 75px;
+    padding-top: 100px;
     text-align: left;
 }
 ul{
@@ -109,7 +109,7 @@ ol{
 } 
 .WeightFirstChampion{
     padding: 20px;
-    grid-column: 3 / 4;
+    grid-column: 2 / 4;
 }
 .history{
     grid-column: 2 / 4;
@@ -158,4 +158,12 @@ h4{
 .WeightHistory p{
     padding-left: 0;
     font-size: 20px
+}
+.LightHistory{
+    font-size: 20px;
+    line-height: 27px;
+}
+.HeavyHistory{
+    font-size: 20px;
+    line-height: 20px;
 }
